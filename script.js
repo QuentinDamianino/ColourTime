@@ -27,5 +27,6 @@ function displayTime() {
     document.body.style["background-color"] = "#" + zeroPad(time.hour) + zeroPad(time.minute) + zeroPad(time.second);
 }
 
+displayTime();
 setInterval(displayTime, 1000);
 

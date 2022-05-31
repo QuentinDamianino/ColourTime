@@ -21,9 +21,9 @@ function getCurrentTime() {
 function displayTime() {
     let time = getCurrentTime();
     
-    let decimalTimeElement = document.getElementById("decimal-time");
+    let hexTimeElement = document.getElementById("hex-time");
     
-    decimalTimeElement.innerHTML = "#" + zeroPad(time.hour) + zeroPad(time.minute) + zeroPad(time.second);
+    hexTimeElement.innerHTML = "#" + zeroPad(time.hour) + zeroPad(time.minute) + zeroPad(time.second);
     document.body.style["background-color"] = "#" + zeroPad(time.hour) + zeroPad(time.minute) + zeroPad(time.second);
 }
 
